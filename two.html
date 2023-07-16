@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style_2.css">
+  <title>Instructions And About</title>
+</head>
+<body>
+<div class="main_part">
+
+<div class="sidebar">
+    <button class="button_one" type="button">Instruction</button>
+    <button class="button_two" type="button">About Us</button>
+    <button class="button_three" type="button">Contact Us</button>
+</div>
+<div class="content">
+  <section class="instruction_section" id="section1">
+    <h1>Welcome to Modern Preiodic Table Instruction</h1>
+    <h4>Here You can see how to use the <a href="index.html">Modern  Periodic Table</a></h4>
+    <p>This Site is Under construction. Please be patient</p>
+  </section>
+  <section class="about_section" id="section2">
+    <h1>About Us</h1>
+    <h3>Owner Of The <a href="index.html">Modern  Periodic Table</a>:</h3>
+    <figure>
+      <img src="https://scontent.fdac24-2.fna.fbcdn.net/v/t39.30808-6/336355388_3498834167105735_6094895073062324109_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=C1mr-8wFeQcAX8C-tIn&_nc_ht=scontent.fdac24-2.fna&oh=00_AfCdstr-ja5JEoa6VZF_cvHJ0da9AV4jsPi-hndq8oq56A&oe=64A78064" alt="Miraz Mahin">
+      <figcaption>Miraz Mahin</figcaption>
+    </figure>
+    <ul>
+      <li>Name: Mohammed Miraz Uddin</li>
+      <li>Proffession: Student, Grade: 10</li>
+      <li>Nationality: I am Bangladeshi</li>
+      <li>Religion: Muslim</li>
+    </ul>
+    <p>Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed minus fuga excepturi voluptatem, et maiores incidunt voluptas ut distinctio natus illum, vel beatae nostrum impedit qui rerum sapiente quo nihil?</p>
+    <p>Description: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed minus fuga excepturi voluptatem, et maiores incidunt voluptas ut distinctio natus illum, vel beatae nostrum impedit qui rerum sapiente quo nihil?</p>
+  </section>
+  <section class="contact_section" id="section3">
+    <h1>Learn how to contact us</h1>
+    <h4>Here You can see how to use the <a href="index.html">Modern  Periodic Table</a></h4>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste consectetur laboriosam nihil repellat deleniti tempora rem! Dolor corrupti laudantium nostrum aperiam placeat fugiat ad. Aperiam odio labore accusantium beatae tempora!</p>
+  </section>
+</div>
+</div>
+
+<script>
+  const buttonone = document.querySelector('.button_one');
+const buttontwo = document.querySelector('.button_two');
+const buttonthree = document.querySelector('.button_three');
+const sectionone = document.querySelector('.instruction_section');
+const sectiontwo = document.querySelector('.about_section');
+const sectionthree = document.querySelector('.contact_section');
+buttonone.addEventListener('click', ()=>{
+  sectionone.classList.add('active-section');
+  buttonone.classList.add('active');
+  sectiontwo.classList.remove('active-section');
+  buttontwo.classList.remove('active');
+  sectionthree.classList.remove('active-section');
+  buttonthree.classList.remove('active');
+})
+buttontwo.addEventListener('click', ()=>{
+  sectiontwo.classList.add('active-section');
+  buttontwo.classList.add('active');
+  sectionone.classList.remove('active-section');
+  buttonone.classList.remove('active');
+  sectionthree.classList.remove('active-section');
+  buttonthree.classList.remove('active');
+})
+buttonthree.addEventListener('click', ()=>{
+  sectionthree.classList.add('active-section');
+  buttonthree.classList.add('active');
+  sectionone.classList.remove('active-section');
+  buttonone.classList.remove('active');
+  sectiontwo.classList.remove('active-section');
+  buttontwo.classList.remove('active');
+})
+window.onload = buttonone.classList.add('active');
+window.onload = sectionone.classList.add('active-section');
+</script>
+</body>
+</html>
