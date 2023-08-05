@@ -1,4 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner:wght@700&family=Kalam:wght@400;700&family=Poppins:wght@300;400;500;700;800;900&display=swap');
+
+@font-face
+{
+    font-family: 'Poppins';
+    src: url(Fonts/Poppins/Poppins-Regular.ttf)
+}
+@font-face
+{
+    font-family: 'EduSa';
+    src: url(Fonts/Edu_SA_Beginner/static/EduSABeginner-Bold.ttf)
+}
 *
 {
     margin: 0;
@@ -195,7 +205,7 @@ header a
 .link p
 {
     color: black;
-    font-family: 'Edu SA Beginner', cursive;
+    font-family:  'EduSa';
 }
 .link a
 {
@@ -412,13 +422,13 @@ header a
     }
     p
     {
-        font-size: 4px;
+        font-size: 6px;
         text-overflow: clip;
     }
     .number
     {
-        font-size: 1px;
-        width: 30px;
+        font-size: 6px;
+        width: 29px;
         top: 1px;
     }
     .extra_elements
@@ -427,6 +437,10 @@ header a
         height: 390px;
     }   
     .link_section:hover .popup
+    {
+        display: none;
+    }
+    .lantha_and_actina_row:hover .popup
     {
         display: none;
     }
@@ -449,12 +463,6 @@ header a
     header a
     {
         font-size: 12px;
-    }
-    .popup
-    {
-        font-size: 10px;
-        max-width: 250px;
-        top: -90px;
     }
 }
 @media (max-width: 765px){
@@ -480,48 +488,54 @@ header a
     }
     p
     {
-        font-size: 4px;
+        font-size: 5px;
         text-overflow: clip;
     }
     .number
     {
-        font-size: 1px;
-        width: 27px;
+        font-size: 5px;
+        width: 25px;
         top: 1px;
     }
     .extra_elements
     {
         width: 680px;
         height: 370px;
-    }   
+    }      
     .link_section:hover .popup
+    {
+        display: none;
+    }
+    .lantha_and_actina_row:hover .popup
     {
         display: none;
     }
     .lantha_and_actina_row h1
     {
-        font-size: 8px;
+        font-size: 7px;
     }
     .copyright_txt
     {
-        font-size: 8px;
+        font-size: 6px;
     }
     header
     {
-        height: 75px;
+        height: 70px;
     }
     header h1
     {
-        font-size: 12px;
+        font-size: 10px;
     }
     header a
     {
-        font-size: 12px;
-    }
-    .popup
-    {
         font-size: 10px;
-        max-width: 250px;
-        top: -90px;
+    }
+}
+
+@media (max-height: 400px)
+{
+    .maino
+    {
+        margin-top:  150px;
     }
 }
