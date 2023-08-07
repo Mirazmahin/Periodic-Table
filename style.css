@@ -488,12 +488,12 @@ header a
     }
     p
     {
-        font-size: 5px;
+        font-size: 2px;
         text-overflow: clip;
     }
     .number
     {
-        font-size: 5px;
+        font-size: 2px;
         width: 25px;
         top: 1px;
     }
